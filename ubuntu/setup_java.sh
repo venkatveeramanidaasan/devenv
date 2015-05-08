@@ -23,8 +23,8 @@ echo 'export PATH' | sudo tee -a /etc/profile
 sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/$JAVA_DIR/bin/java" 1
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/$JAVA_DIR/bin/javac" 1
 sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/$JAVA_DIR/bin/javaws" 1
-sudo update-alternatives --set "/usr/bin/java" "java" "/usr/local/java/$JAVA_DIR/bin/java" 1 
-sudo update-alternatives --set "/usr/bin/javac" "javac" "/usr/local/java/$JAVA_DIR/bin/javac" 1
-sudo update-alternatives --set "/usr/bin/javaws" "javaws" "/usr/local/java/$JAVA_DIR/bin/javaws" 1
+sudo update-alternatives --set "java" "/usr/local/java/$JAVA_DIR/bin/java"
+sudo update-alternatives --set "javac" "/usr/local/java/$JAVA_DIR/bin/javac"
+sudo update-alternatives --set "javaws" "/usr/local/java/$JAVA_DIR/bin/javaws"
 . /etc/profile
 java -version
